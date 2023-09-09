@@ -10,4 +10,8 @@ def index():
 def images():
     return render_template('images.html')
 
+@app.route('/todo')
+def todo():
+    return render_template('todo.html')
+
 app.run(debug=True)
