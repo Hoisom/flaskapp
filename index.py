@@ -10,4 +10,4 @@ def index():
 def images():
     return render_template('images.html')
 
-app.run()
+app.run(debug=True)
