@@ -30,4 +30,7 @@ def create_app(test_config=None):
     def todo():
         return render_template('todo.html')
 
+    from . import db
+    db.init_app(app)    
+    
     return app
