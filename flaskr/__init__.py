@@ -19,16 +19,8 @@ def create_app(test_config=None):
         pass
 
     @app.route('/')
-    def index():
-        return render_template('home.html')
-
-    @app.route('/images')
-    def images():
-        return render_template('images.html')
-
-    @app.route('/todo')
-    def todo():
-        return render_template('todo.html')
+    def hello():
+        return "Hello, World!"
 
     from . import db
     db.init_app(app)    
